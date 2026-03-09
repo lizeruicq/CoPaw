@@ -17,6 +17,11 @@ cookbook/_build
 dist/
 # Console frontend build (generated in Docker/CI, do not commit)
 src/copaw/console/dist/
+# Console static assets are build outputs, do not commit
+src/copaw/console/assets/
+src/copaw/console/index.html
+src/copaw/console/copaw-symbol.svg
+src/copaw/console/logo.png
 
 # frontend (website)
 website/node_modules/

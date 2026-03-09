@@ -21,6 +21,11 @@ from .browser_control import browser_use
 from .desktop_screenshot import desktop_screenshot
 from .memory_search import create_memory_search_tool
 from .get_current_time import get_current_time
+from .market_data_finnhub import (
+    get_asset_price,
+    get_gold_price,
+    get_global_indices,
+)
 
 __all__ = [
     "execute_python_code",
@@ -38,4 +43,7 @@ __all__ = [
     "browser_use",
     "create_memory_search_tool",
     "get_current_time",
+    "get_asset_price",
+    "get_gold_price",
+    "get_global_indices",
 ]

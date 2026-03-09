@@ -32,6 +32,9 @@ from .tools import (
     edit_file,
     execute_shell_command,
     get_current_time,
+    get_asset_price,
+    get_gold_price,
+    get_global_indices,
     read_file,
     send_file_to_user,
     write_file,
@@ -198,6 +201,18 @@ class CoPawAgent(ReActAgent):
         )
         toolkit.register_tool_function(
             get_current_time,
+            namesake_strategy=namesake_strategy,
+        )
+        toolkit.register_tool_function(
+            get_asset_price,
+            namesake_strategy=namesake_strategy,
+        )
+        toolkit.register_tool_function(
+            get_gold_price,
+            namesake_strategy=namesake_strategy,
+        )
+        toolkit.register_tool_function(
+            get_global_indices,
             namesake_strategy=namesake_strategy,
         )
 
